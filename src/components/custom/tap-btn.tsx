@@ -1,5 +1,4 @@
-// components/TapButton.tsx
-
+// components/custom/TapButton.tsx
 'use client';
 
 import React from 'react';
@@ -8,7 +7,7 @@ import { cn } from '@/lib/utils'; // Ensure this path is correct
 import { useCryptoEnergy } from '@/context/provider';
 
 const TapButton: React.FC = () => {
-  const { animate, lastIncrement, handleClick } = useCryptoEnergy();
+  const { handleClick, animate, lastIncrement } = useCryptoEnergy();
 
   return (
     <div className="flex flex-col items-center space-y-4">
