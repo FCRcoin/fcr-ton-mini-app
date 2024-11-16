@@ -13,8 +13,8 @@ export default function Home() {
           <p className="text-white text-sm">Rewards Marketplace</p>
           <Image
             src="/assets/epimall.svg"
-            width={100}
-            height={100}
+            width={120}
+            height={120}
             alt="coin"
             className="border-4 p-2 border-white"
           />

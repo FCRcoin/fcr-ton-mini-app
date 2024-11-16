@@ -12,16 +12,15 @@ const TapButton: React.FC = () => {
 
   return (
     <div className="flex flex-col items-center space-y-4">
-      {/* Button with Image */}
       <div className="relative">
         <button
           onClick={handleClick}
-          className="p-4 rounded-full bg-transparent bg-none"
+          className="p-2 rounded-full bg-transparent bg-none"
         >
           <Image
             src="/assets/coin-tap.svg"
-            width={200}
-            height={200}
+            width={250}
+            height={250}
             alt="coin tap"
           />
         </button>
@@ -30,7 +29,7 @@ const TapButton: React.FC = () => {
         {animate && (
           <span
             className={cn(
-              'absolute top-0 left-1/2 transform -translate-x-1/2 text-green-400 font-bold',
+              'absolute top-0 left-1/2 transform -translate-x-1/2 text-green-400 font-bold text-5xl',
               'animate-fadeUp'
             )}
           >

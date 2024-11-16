@@ -61,12 +61,12 @@ const RankingAccordion = () => {
                 height={40}
               />
 
-              <p>
+              <p className="text-center">
                 {selectedRank.charAt(0).toUpperCase() + selectedRank.slice(1)}
               </p>
             </div>
           </AccordionTrigger>
-          <AccordionContent>
+          <AccordionContent className="text-center">
             {rankings[selectedRank as keyof typeof rankings]}
           </AccordionContent>
         </AccordionItem>
