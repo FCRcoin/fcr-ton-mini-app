@@ -5,7 +5,7 @@
 import React from 'react';
 import { Progress } from '../ui/progress';
 import Image from 'next/image';
-import { useCryptoEnergy } from '@/app/context/provider';
+import { useCryptoEnergy } from '@/context/provider';
 
 const EnergyIndicator: React.FC = () => {
   const { energy, energyLimit } = useCryptoEnergy();

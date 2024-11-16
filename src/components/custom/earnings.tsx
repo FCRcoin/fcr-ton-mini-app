@@ -4,7 +4,7 @@
 
 import React from 'react';
 import Image from 'next/image';
-import { useCryptoEnergy } from '@/app/context/provider';
+import { useCryptoEnergy } from '@/context/provider';
 
 const CoinEarnings: React.FC = () => {
   const { userEarnings } = useCryptoEnergy();

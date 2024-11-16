@@ -5,7 +5,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { cn } from '@/lib/utils'; // Ensure this path is correct
-import { useCryptoEnergy } from '@/app/context/provider';
+import { useCryptoEnergy } from '@/context/provider';
 
 const TapButton: React.FC = () => {
   const { animate, lastIncrement, handleClick } = useCryptoEnergy();
