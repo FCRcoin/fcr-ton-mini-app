@@ -11,7 +11,7 @@ const CoinEarnings: React.FC = () => {
 
   return (
     <div className="flex gap-1 items-center justify-center">
-      <Image src="/assets/coin-sm.png" width={70} height={70} alt="coin" />
+      <Image src="/assets/coin-sm.svg" width={70} height={70} alt="coin" />
       <p className="text-white text-5xl font-medium">{userEarnings}</p>
     </div>
   );

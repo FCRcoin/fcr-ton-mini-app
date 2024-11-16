@@ -14,9 +14,12 @@ const TapButton: React.FC = () => {
     <div className="flex flex-col items-center space-y-4">
       {/* Button with Image */}
       <div className="relative">
-        <button onClick={handleClick} className="p-4 rounded-full">
+        <button
+          onClick={handleClick}
+          className="p-4 rounded-full bg-transparent bg-none"
+        >
           <Image
-            src="/assets/coin-tap.png"
+            src="/assets/coin-tap.svg"
             width={200}
             height={200}
             alt="coin tap"

@@ -21,11 +21,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <CryptoEnergyProvider>
-          <main className="py-4 px-8">
-            <Header />
-            {children}
-            <NavigationBar />
-          </main>
+          <Header />
+          <main className="py-4 px-8">{children}</main>
+          <NavigationBar />
         </CryptoEnergyProvider>
       </body>
     </html>
