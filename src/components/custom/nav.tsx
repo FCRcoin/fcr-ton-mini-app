@@ -23,7 +23,7 @@ export function NavigationBar() {
     { href: '/referral', label: 'Referral', icon: '/assets/referral.png' },
     { href: '/task', label: 'Task', icon: '/assets/task.png' },
     { href: '/', label: 'Tap', icon: '/assets/tap.png' },
-    { href: '/boost', label: 'Boost', icon: '/assets/boost.png' },
+    { href: '/epimall', label: 'Shop', icon: '/assets/boost.png' },
     { href: '/stats', label: 'Stats', icon: '/assets/stats.png' },
   ];
 
