@@ -1,4 +1,5 @@
 'use client';
+import { useCryptoEnergy } from '@/context/provider';
 import {
   Accordion,
   AccordionItem,
@@ -6,7 +7,7 @@ import {
   AccordionContent,
 } from '@radix-ui/react-accordion';
 import Image from 'next/image';
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 
 const rankings = {
   harvester: 'A hardworking individual who cultivates the land.',
@@ -15,24 +16,13 @@ const rankings = {
 };
 
 const earningThresholds = {
-  Farmer: 10000,
-  Haciendero: 50000,
-  Monopoly: Infinity,
+  Farmer: 100,
+  Haciendero: 200,
+  Monopoly: 300,
 };
 
 const RankingAccordion = () => {
-  const [selectedRank, setSelectedRank] = useState<string | null>(null);
-  const [userEarnings, setUserEarnings] = useState<number>(0);
-
-  const fetchUserEarnings = async () => {
-    // TODO: Replace this with your actual API call to fetch user earnings
-
-    setUserEarnings(40000);
-  };
-
-  useEffect(() => {
-    fetchUserEarnings();
-  }, []);
+  const { setSelectedRank, selectedRank, userEarnings } = useCryptoEnergy();
 
   useEffect(() => {
     if (userEarnings < earningThresholds.Farmer) {
