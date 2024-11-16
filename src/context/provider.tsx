@@ -45,8 +45,8 @@ interface CryptoEnergyProviderProps {
 export const CryptoEnergyProvider: React.FC<CryptoEnergyProviderProps> = ({
   children,
 }) => {
-  const [energy, setEnergy] = useState<number>(20000); // Starting with 100 energy units
-  const energyLimit = 20000; // Fixed limit
+  const [energy, setEnergy] = useState<number>(1000); // Starting with 100 energy units
+  const energyLimit = 1000; // Fixed limit
   const [animate, setAnimate] = useState<boolean>(false);
   const [lastIncrement, setLastIncrement] = useState<number>(0);
   const [selectedRank, setSelectedRank] = useState<string | null>(null);
