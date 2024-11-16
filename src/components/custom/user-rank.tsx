@@ -7,32 +7,17 @@ import {
   AccordionContent,
 } from '@radix-ui/react-accordion';
 import Image from 'next/image';
-import { useEffect } from 'react';
 
 const rankings = {
-  harvester: 'A hardworking individual who cultivates the land.',
-  farmer: 'A landowner who manages a large estate.',
-  hacienda: 'A person or entity with exclusive control over a market.',
-};
-
-const earningThresholds = {
-  Farmer: 100,
-  Haciendero: 200,
-  Monopoly: 300,
+  harvester: 'A relentless tapping machine, earning points with every click!',
+  farmer:
+    'A fun and engaging way to start, amassing points and enjoying the game!',
+  hacienda:
+    'The ultimate tap champion, with unparalleled control over the crypto game!',
 };
 
 const RankingAccordion = () => {
-  const { setSelectedRank, selectedRank, userEarnings } = useCryptoEnergy();
-
-  useEffect(() => {
-    if (userEarnings < earningThresholds.Farmer) {
-      setSelectedRank('farmer');
-    } else if (userEarnings < earningThresholds.Haciendero) {
-      setSelectedRank('hacienda');
-    } else {
-      setSelectedRank('monopoly');
-    }
-  }, [userEarnings]);
+  const { selectedRank } = useCryptoEnergy();
 
   return (
     <Accordion type="single" collapsible className="w-full text-white">

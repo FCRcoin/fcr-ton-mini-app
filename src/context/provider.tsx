@@ -147,17 +147,19 @@ export const CryptoEnergyProvider: React.FC<CryptoEnergyProviderProps> = ({
   // Determine selected rank based on userEarnings
   useEffect(() => {
     const earningThresholds: { [key: string]: number } = {
-      Farmer: 10000,
-      Haciendero: 50000,
-      Monopoly: Infinity,
+      farmer: 100,
+      harvester: 200,
+      hacienda: 300,
     };
 
-    if (userEarnings < earningThresholds.Farmer) {
+    if (userEarnings < earningThresholds.farmer) {
       setSelectedRank('farmer');
-    } else if (userEarnings < earningThresholds.Haciendero) {
+    } else if (userEarnings < earningThresholds.harvester) {
+      setSelectedRank('harvester');
+    } else if (userEarnings < earningThresholds.hacienda) {
       setSelectedRank('hacienda');
     } else {
-      setSelectedRank('monopoly');
+      setSelectedRank('farmer');
     }
   }, [userEarnings]);
 
