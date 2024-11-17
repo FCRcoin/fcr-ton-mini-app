@@ -2,11 +2,25 @@
 
 import ProductCard from '@/components/custom/shop/product-card';
 import { products } from '../../data/mock';
+import Image from 'next/image';
+import ButtonGroup from '@/components/custom/shop/button-group';
+import CountryGroup from '@/components/custom/shop/countries';
 
 export default function Page() {
   return (
     <div>
-      <h1 className="text-3xl font-bold mb-6">Epimall</h1>
+      <div className="mb-6 w-full">
+        <Image
+          src="/assets/epimall.svg"
+          width={120}
+          height={120}
+          alt="coin"
+          className="border-4 p-2 border-white mx-auto"
+        />
+      </div>
+
+      <ButtonGroup />
+      <CountryGroup />
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {products.map((product) => (
