@@ -62,7 +62,7 @@ export default function CountryGroup() {
   ];
 
   return (
-    <div className="flex items-center gap-4 p-4 overflow-x-auto  min-h-[120px]">
+    <div className="flex items-center gap-4 p-4 overflow-x-auto  min-h-[120px] justify-center">
       {countries.map((country) => (
         <Button
           key={country.code}
