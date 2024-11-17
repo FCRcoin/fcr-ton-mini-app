@@ -17,7 +17,7 @@
     "@tonconnect/ui-react": "^2.0.5",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
-    "eruda": "^3.4.1",
+    "flag-icons": "^7.2.3",
     "lucide-react": "^0.460.0",
     "next": "14.2.4",
     "next-intl": "^3.25.1",

@@ -18,7 +18,7 @@ const ProductCard = ({ product }: { product: Product }) => {
       />
       <div className="p-4 flex-grow">
         <h3 className="text-lg font-semibold">{product.name}</h3>
-        <p className="text-gray-700">${product.price}</p>
+        <p className="text-gray-700">{product.price} FCR</p>
         <p className="text-gray-600 text-sm line-clamp-3">
           {product.description}
         </p>
