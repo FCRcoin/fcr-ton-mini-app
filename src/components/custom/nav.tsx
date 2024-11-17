@@ -20,8 +20,8 @@ export function NavigationBar() {
 
   // Define your navigation items
   const navItems = [
-    { href: '/referral', label: 'Referral', icon: '/assets/referral.png' },
-    { href: '/task', label: 'Task', icon: '/assets/task.png' },
+    { href: '/ton-connect', label: 'Connect', icon: '/assets/referral.png' },
+    // { href: '/task', label: 'Task', icon: '/assets/task.png' },
     { href: '/', label: 'Tap', icon: '/assets/tap.png' },
     { href: '/epimall', label: 'Shop', icon: '/assets/boost.png' },
     { href: '/stats', label: 'Stats', icon: '/assets/stats.png' },
