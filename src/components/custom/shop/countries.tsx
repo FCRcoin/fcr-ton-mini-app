@@ -10,16 +10,6 @@ interface Country {
 export default function CountryGroup() {
   const countries: Country[] = [
     {
-      code: 'PHL',
-      name: 'Philippines',
-      flag: '/assets/countries/ph.svg',
-    },
-    {
-      code: 'CHN',
-      name: 'China',
-      flag: '/assets/countries/cn.svg',
-    },
-    {
       code: 'IDN',
       name: 'Indonesia',
       flag: '/assets/countries/id.svg',
@@ -33,6 +23,16 @@ export default function CountryGroup() {
       code: 'VN',
       name: 'Vietnam',
       flag: '/assets/countries/vn.svg',
+    },
+    {
+      code: 'PHL',
+      name: 'Philippines',
+      flag: '/assets/countries/ph.svg',
+    },
+    {
+      code: 'CHN',
+      name: 'China',
+      flag: '/assets/countries/cn.svg',
     },
     {
       code: 'SG',
