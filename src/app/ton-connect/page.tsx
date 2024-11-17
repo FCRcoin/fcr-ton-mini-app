@@ -84,32 +84,6 @@ export default function TONConnectPage() {
             </div>
           </>
         )}
-
-        <DisplayData
-          header="Account"
-          rows={[
-            { title: 'Address', value: address },
-            { title: 'Chain', value: chain },
-            { title: 'Public Key', value: publicKey },
-          ]}
-        />
-
-        <DisplayData
-          header="Device"
-          rows={[
-            { title: 'App Name', value: appName },
-            { title: 'Version', value: appVersion },
-            { title: 'Protocol Version', value: maxProtocolVersion.toString() },
-            { title: 'Platform', value: platform },
-            {
-              title: 'Features',
-              value: features
-                .map(f => typeof f === 'object' ? f.name : undefined)
-                .filter(v => v)
-                .join(', '),
-            },
-          ]}
-        />
       </List>
     </Page>
   );
