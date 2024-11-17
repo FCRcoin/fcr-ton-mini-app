@@ -156,10 +156,8 @@ export const CryptoEnergyProvider: React.FC<CryptoEnergyProviderProps> = ({
       setSelectedRank('farmer');
     } else if (userEarnings < earningThresholds.harvester) {
       setSelectedRank('harvester');
-    } else if (userEarnings < earningThresholds.hacienda) {
-      setSelectedRank('hacienda');
     } else {
-      setSelectedRank('farmer');
+      setSelectedRank('hacienda');
     }
   }, [userEarnings]);
 
