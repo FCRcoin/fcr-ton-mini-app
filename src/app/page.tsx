@@ -18,7 +18,7 @@ export default function Home() {
             alt="coin"
             className="border-4 p-2 border-white"
           />
-          <Link href="/partners" className="text-supernova-400 text-xs">
+          <Link href="/epimall" className="text-supernova-400 text-xs">
             Click for more partners here
           </Link>
         </div>
